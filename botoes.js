@@ -77,3 +77,5 @@ botaoAlt.addEventListener("click", convertAlt);
 botaoCap.addEventListener("click", convertCap);
 botaoInv.addEventListener("click", convertInv);
 botaoClear.addEventListener("click", clear);
+
+

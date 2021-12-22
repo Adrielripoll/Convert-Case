@@ -1,7 +1,7 @@
 var _CONTENT = [ 
 	'O CAPS LOCK ESTAVA LIGADO?', 
 	'o caps lock estava desligado?', 
-	'esqueceu das iniciais maiúsculas?' 
+	'esqueceu as iniciais maiúsculas?' 
 ];
 
 var _PART = 0;

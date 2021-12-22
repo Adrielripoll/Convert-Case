@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Transform</title>
+    <title>Caps Lk</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/b4bc5916ff.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/icon3.png" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <h3>Case</h3>
+        <h3><a href="index.html"><img src="./assets/capslk3.png" class="logo"></a></h3>
         <ul>
             <li>    
                 <a href="https://www.instagram.com/adrielripoll/?hl=pt-br" target="_blank" class="instagram">
@@ -23,8 +25,8 @@
                 </a>
             </li>
             <li>    
-                <a href=# target="_blank"class="linkedin">
-                    <i class="fab fa-linkedin"></i>                    
+                <a href="https://www.linkedin.com/in/adriel-ripoll-4498631b3/" target="_blank"class="linkedin">
+                    <i class="fab fa-linkedin"></i>               
                     LinkedIn
                 </a>
             </li>
@@ -33,55 +35,90 @@
     
     <main>
         <div id="container">
-            <h1 class="mainTitle">Cansadx de ter que reescrever seus textos porque</h1>
+            <h1 class="main-title">Cansadx de ter que reescrever seus textos porque</h1>
             <div id="text"></div><div id="cursor"></div>
         </div>
-        <div class="caixaTexto">
-            <textarea class="areaTexto" id="texto" placeholder="Digite ou cole seu texto..."></textarea>
+        <div class="text-box">
+            <textarea class="text-area" id="texto" placeholder="Digite ou cole seu texto..."></textarea>            
         </div>
-        <div class="caixaBotoes">    
-            <button class="botoes" id="upper">UPPERCASE</button>
-            <button class="botoes" id="lower">lowercase</button>
-            <button class="botoes" id="alt">AlTeRnAtE CaSe</button>
-            <button class="botoes" id="cap">Capitalized Case</button>
-            <button class="botoes" id="inv">iNVERSE cASE</button>
-            <button class="botoes" id="clear">Limpar</button>
+        <div class="buttons-box">    
+            <button class="button" id="upper">UPPERCASE</button>
+            <button class="button" id="lower">lowercase</button>
+            <button class="button" id="alt">AlTeRnAtE CaSe</button>
+            <button class="button" id="cap">Capitalized Case</button>
+            <button class="button" id="inv">iNVERSE cASE</button>
+            <button class="button" id="clear">Limpar</button>
         </div>
+        
     </main>
-    <div>
-        <ul class="shareButtons">
-            <li>
-                <a href=# class="whatsappShare"> 
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </li>
-            <li>
-                <a href=# class="copyShare"> 
-                    <i class="far fa-copy"></i>
-                </a>
-            </li>
-        </ul>
+    <div class="share-box">
+        <h1>Compartilhe com seus amigos</h1>
+        <div>
+           <button type="text" id="shareButton" class="link-share">Copiar Link</button>
+        </div>
     </div>
-
    <div class="content-container">
-        <div class="content-box">
-            <span class="content-box-title">UPPER CASE</span>
-            <div class="underline"></div>
-            <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
-            <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
-            <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+        <div>
+            <div class="content-box">
+                <span class="content-box-title">UPPER CASE</span>
+                <div class="underline"></div>
+                <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
+                <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
+                <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            </div>
+            <div class="content-box bottom">
+                <span class="content-box-title">AlTeRnAtE CaSe</span>
+                <div class="underline"></div>
+                <span class="content-box-content">A famosa "Caixa Alta" que todos nós conhecemos.</span>
+                <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
+                <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            </div>
         </div>
+        <div>
+            <div class="content-box ">
+                <span class="content-box-title">lower case</span>
+                <div class="underline"></div>
+                <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
+                <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
+                <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            </div>
 
-        <div class="content-box" >
-            <span class="content-box-title">UPPER CASE</span>
-            <div class="underline"></div>
-            <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
-            <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
-            <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            <div class="content-box bottom">
+                <span class="content-box-title">Capitalized Case</span>
+                <div class="underline"></div>
+                <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
+                <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
+                <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            </div>
         </div>
-
-   </div>
+        <div>
+            <div class="content-box" >
+                <span class="content-box-title">iNVERSE cASE</span>
+                <div class="underline"></div>
+                <span class="content-box-content"> A famosa "Caixa Alta" que todos nós conhecemos.</span>
+                <span class="content-box-content">Essa função transforma todas as letras do seu texto em MAIÚSCULAS.</span>
+                <span class="content-box-content" style="font-weight: 700;">Ex: TEXTO EM CAIXA ALTA</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Desenvolvido por Adriel Ripoll</span>
+    </footer>   
     <script src="botoes.js"></script>
     <script src="animatedTitle.js"></script>
+    <script src="shareButton.js"></script>
+    <script type="text/javascript">
+        function alert(){
+            swal({
+                title: "Link copiado!",
+                text: "Agora é só enviar para os amigos.",
+                icon: "success"
+            })
+        }
+
+        document.getElementById("shareButton").addEventListener("click", alert)
+
+        
+    </script>
 </body>
 </html>
